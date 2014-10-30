@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout 
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+	        
+	    <cn.ibeilin.util.TabHorizontalScrollView
+	        android:id="@+id/sv_nav"
+	        android:layout_width="match_parent"
+	    	android:layout_height="50dp"
+	    	android:scrollbars="none" >
+	    	
+	        <RelativeLayout
+	            android:id="@+id/rl_nav"
+	            android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:background="#ffffff" >
+	    		
+	            <RadioGroup 
+	                android:id="@+id/rg_nav"
+	                android:layout_width="match_parent"
+				    android:layout_height="48dp"
+				    android:layout_alignParentTop="true"
+				    android:background="#f2f2f2"
+				    android:orientation="horizontal" ></RadioGroup>
+	            <ImageView
+	                android:id="@+id/iv_nav_indicator"
+	                android:layout_width="1dp"
+				    android:layout_height="5dp"
+				    android:background="@color/sky_blue"
+				    android:layout_alignParentBottom="true" />
+	            
+	        </RelativeLayout>
+	        
+	    </cn.ibeilin.util.TabHorizontalScrollView>
+	    
+	    <ImageView
+	        android:id="@+id/iv_nav_left"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:src="@drawable/iv_navagation_scroll_left"
+	    	android:layout_marginLeft="10dp"
+	    	android:layout_centerVertical="true"
+	    	android:layout_alignParentLeft="true" />
+        
+	    <ImageView
+	        android:id="@+id/iv_nav_right"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:src="@drawable/iv_navagation_scroll_right"
+	    	android:layout_marginRight="10dp"
+	    	android:layout_centerVertical="true"
+	    	android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/rl_tab" />
+
+</RelativeLayout>

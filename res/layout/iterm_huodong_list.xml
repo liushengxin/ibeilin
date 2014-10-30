@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_iterm_huodong_list"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/huodong_list_iterm_bg"
+    android:orientation="vertical"
+    android:padding="1dp" >
+
+    <ImageView
+        android:id="@+id/huodon_cover_iterm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/hudong_cover" >
+    </ImageView>
+    <!-- 华丽分割线 -->
+    <!-- 华丽分割线 -->
+    <!-- 华丽分割线 -->
+    <!-- 华丽分割线 -->
+    <!-- 华丽分割线 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/huodong_name_iterm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="活动名称" />
+
+        <TextView
+            android:id="@+id/huodong_intro_iterm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="活动简活动简介简介简介活动简介简介简介活动简介简介简介活动简介简介简介活动简介简介简介介简介简介"
+            android:textColor="#828282"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- 华丽分割线 -->
+    <!-- 华丽分割线 -->
+    <!-- 华丽分割线 -->
+    <!-- 华丽分割线 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/fabuzhe_logo_IV_huodong_list_iterm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page1_img1" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/fabuzhe_name_huodong_list_iterm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/fabuzhe_logo_IV_huodong_list_iterm"
+            android:text="发布者名称"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fabuzhe_name_huodong_list_iterm"
+            android:layout_toRightOf="@+id/fabuzhe_logo_IV_huodong_list_iterm"
+            android:text="5小时前"
+            android:textColor="#828282"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/canjia_num_huodong_list_iterm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="111"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/canjia_num_huodong_list_iterm"
+            android:text="参加"
+            android:textColor="#828282"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>
